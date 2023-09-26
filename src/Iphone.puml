@@ -1,0 +1,20 @@
+@startuml DiagramaIphone
+interface ReprodutorMusical{
+    tocarMusica()
+    pausarMusica()
+    trocarMusica()
+}
+interface NavegadorInternet{
+    novaPagina()
+    fecharPagina()
+}
+interface AparelhoTelefonico{
+    ligarNumero()
+    desligarLigacao()
+    ligarCelular()
+    desligarCelular()
+}
+Iphone ..|> ReprodutorMusical
+Iphone ..|> AparelhoTelefonico
+Iphone ..|> NavegadorInternet
+@enduml
